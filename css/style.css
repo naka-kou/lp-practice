@@ -1,1 +1,274 @@
 @charset "utf-8";
+
+.inner {
+    width: 97%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo span {
+    font-size: 30px;
+    color: #777;
+    display: inline-block;
+}
+
+.contact-button {
+    background-color: #6ba7eb;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #e6b800;
+    color: #333;
+}
+
+.keyvisual {
+    position: relative;    
+    padding: 400px 2rem;    
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.keyvisual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/keyvisual/keyvisual.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    z-index: 0;
+}
+
+.keyvisual-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.main-title {
+    font-size: 65px;
+    font-weight: 700;
+    color: #6ba7eb;
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.news {
+    background-color: #e3f2fd;
+    padding: 50px 60px 0 100px;
+}
+
+.news-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.news-image {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.news-image img {
+    width: 250px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.news-text {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.news-text p {
+    font-size: 15px;
+    line-height: 18px;
+    word-break: break-all;
+    color: #555;
+    max-width: none; 
+    margin: 0 auto;
+}
+
+.skills {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skills-icon {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.skills-icon img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    background-color: #f2f2f2;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.skills-icon img:hover {
+    opacity: 1.0;
+}
+
+.plan {
+    background-color: #d0dfea;
+    padding: 50px 0;
+}
+
+.plan-inner {
+    width: 97%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.plan .section-title {
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #333;
+}
+
+.plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.plan-table th,
+.plan-table td {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    height: 26px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.plan-table th:last-child,
+.plan-table td:last-child {
+    border-right: none;
+}
+
+.plan-table thead th {
+    background-color: #6ba7eb;
+    color: #333;
+    border-bottom: 2px solid #fff;
+}
+
+.plan-table tbody th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.plan-table tbody tr:nth-child(even) td,
+.plan-table tbody tr:nth-child(even) th {
+    background-color: #e0efff;
+}
+
+.plan-table td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.sns {
+    background-color: #e3f2fd;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sns-list li a {
+    display: inline-block;
+    width: 185px;
+    text-align: center;
+    padding: 25px 0;
+    color: #8c8c8c;
+    font-size: 40px;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.sns-list li a:hover {
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #cfd8dc;
+    padding: 25px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer .copyright {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #555;
+    margin: 0;
+    margin-right: 50px;
+}
