@@ -1,6 +1,9 @@
 @charset "utf-8";
 
-.inner {
+.inner,
+.news-inner,
+.plan-inner,
+.sns-inner {
     width: 97%;
     max-width: 1100px;
     margin: 0 auto;
@@ -86,7 +89,7 @@ header {
 
 .news {
     background-color: #e3f2fd;
-    padding: 50px 60px 0 100px;
+    padding: 50px 0 0 0;
 }
 
 .news-wrapper {
@@ -168,12 +171,6 @@ header {
 .plan {
     background-color: #d0dfea;
     padding: 50px 0;
-}
-
-.plan-inner {
-    width: 97%;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .plan .section-title {
