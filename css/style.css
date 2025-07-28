@@ -125,7 +125,6 @@ header {
     line-height: 18px;
     word-break: break-all;
     color: #555;
-    max-width: none; 
     margin: 0 auto;
 }
 
@@ -133,15 +132,6 @@ header {
     background-color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.section-title {
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    letter-spacing: 10px;
-    font-weight: bold;
-    color: #333;
 }
 
 .skills-icon {
@@ -174,11 +164,7 @@ header {
 }
 
 .plan .section-title {
-    font-size: 40px;
-    letter-spacing: 10px;
     margin-bottom: 50px;
-    text-align: center;
-    color: #333;
 }
 
 .plan-table {

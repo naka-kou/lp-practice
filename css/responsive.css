@@ -1,8 +1,3 @@
-/* ===========================
-   responsive.css
-   タブレット・スマホ用スタイル
-=========================== */
-
 @media screen and (max-width: 1199px) {
    .keyvisual {
       padding: 250px 2rem;
@@ -11,28 +6,57 @@
    .news {
       padding: 50px 0;
    }
+
    .news-wrapper {
-      display: block;
-   } 
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+   }
+
    .news-image,
    .news-text {
       width: 100%;
       margin: 0 auto;
    }
+
    .news-text {
       text-align: center;
-      padding: 0 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
    }
 
+   .skills-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin-top: 40px;
+   }
+
+   .skills-icon img {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+   }
+
+   .skills-icon img:nth-child(3),
+   .skills-icon img:nth-child(6),
+   .skills-icon img:nth-child(9) {
+      margin-bottom: 80px;
+   }
 }
 
 @media screen and (max-width: 767px) {
    .contact-button {
       display: none;
-   } 
+   }
+
    .header-nav {
       position: relative;
    }
+
    .header-nav::after {
       content: "\2630";
       font-size: 28px;
@@ -47,9 +71,11 @@
    .keyvisual {
       padding: 200px 2rem;
    }
+
    .main-title {
       font-size: 40px;
    }
+
    .sub-title {
       font-size: 30px;
    }
@@ -57,17 +83,64 @@
    .news {
       padding: 50px 0;
    }
+
    .news-wrapper {
-      display: block;
-   } 
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+   }
+
    .news-image,
    .news-text {
       width: 100%;
       margin: 0 auto;
    }
+
    .news-text {
       text-align: center;
-      padding: 0 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
    }
 
+   .skills-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin-top: 40px;
+   }
+
+   .skills-icon img {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+   }
+
+   .skills-icon img:nth-child(3),
+   .skills-icon img:nth-child(6),
+   .skills-icon img:nth-child(9) {
+      margin-bottom: 80px;
+   }
+
+   .plan-table th {
+      font-size: 14px;
+      line-height: 22px;
+   }
+
+   .plan-table td {
+      font-size: 12px;
+   }
+
+   .sns {
+      padding: 50px 0;
+   }
+
+   .sns-list li a {
+      width: 100%;
+      padding: 50px 0;
+      margin: 0 15px;
+      box-sizing: border-box;
+   }
 }
